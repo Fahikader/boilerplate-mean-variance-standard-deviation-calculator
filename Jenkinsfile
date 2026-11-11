@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
-                bat 'pip install -r requirements.txt pytest'
+                sh 'pip install -r requirements.txt pytest'
             }
         }
         stage('Run Automated Tests') {
